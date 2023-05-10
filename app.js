@@ -1,6 +1,6 @@
-const $button = document.getElementById("dark-mode");
+const $toggle_button = document.getElementById("toggle-button");
 const $html = document.querySelector("html");
 
-$button.addEventListener("click", () => {
+$toggle_button.addEventListener("click", () => {
     $html.classList.toggle("dark-mode");
 });

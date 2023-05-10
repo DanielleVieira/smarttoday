@@ -8,7 +8,7 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-areas: 'header' 'main' 'footer';
-    grid-template-rows: 10vh auto 10vh;
+    grid-template-rows: 50px 1fr auto;
 }
 
 header {
@@ -23,19 +23,5 @@ footer {
     grid-area: footer;
 }
 
-.banner {
-    border: var(--cor-primaria) solid 1px;
-}
 
-.produtos {
-    border: var(--cor-secundaria) solid 1px;
-}
-
-.quemSomos {
-    border: var(--cor-destaque1) solid 1px;
-}
-
-.nossoTime {
-    border: var(--cor-destaque2) solid 1px;
-}
 
