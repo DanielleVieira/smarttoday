@@ -17,7 +17,7 @@
     --cor-realce-forte: #f83c03;
     --cor-titulo: #333333;
     --cor-subtitulo: #666666;
-    --cor-texto: #888888;
+    --cor-texto: #333333;
 }
 
 .dark-mode:root {
@@ -55,7 +55,7 @@ header {
 }
 
 section {
-    padding: 20px 10px;
+    padding: 30px 10px;
 }
 
 #banner {
@@ -91,3 +91,29 @@ section {
     font-size: var(--tamanho-subtitulo);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 } 
+
+.card {
+    background-color: var(--cor-fundo);
+    border: none;
+}
+
+.card .card-body {
+    /* max-height: 220px; */
+}
+
+.card img {
+    height: 291px;
+    width: 260;
+}
+
+.card .card-footer {
+    font-size: 14px;
+    background-color: var(--cor-fundo);
+    border-top: var(--cor-subtitulo) solid 1px;
+}
+
+.card .card-footer a {
+    background-color: var(--cor-primaria);
+    margin-bottom: 10px;
+    color: var(--cor-texto);
+}
