@@ -1,119 +1,175 @@
 :root {
-    --fonte-titulo: 'Dancing Script', cursive;
-    --fonte-subtitulo: 'Montserrat', sans-serif;
-    --fonte-corpo: 'Montserrat', sans-serif;
-    --tamanho-titulo: 36px;
-    --tamanho-subtitulo: 20px;
-    --tamanho-texto: 18px;
-    --peso-titulo: 400;
-    --peso-subtitulo: 700;
-    --peso-texto: 400;
-    --cor-primaria: #FF80AB;
-    --cor-secundaria: #90CAF9;
-    --cor-destaque1: #C4E538;
-    --cor-destaque2: #D7A5FF;
-    --cor-fundo: #F5F5F5;
-    --cor-realce: #FF7043;
-    --cor-realce-forte: #f83c03;
-    --cor-titulo: #333333;
-    --cor-subtitulo: #666666;
-    --cor-texto: #333333;
+  font-size: 62.5%;
+  --fonte-titulo: "Dancing Script", cursive;
+  --fonte-subtitulo: "Montserrat", sans-serif;
+  --fonte-corpo: "Montserrat", sans-serif;
+  --tamanho-titulo: 3.6rem;
+  --tamanho-subtitulo: 2rem;
+  --tamanho-texto: 1.8rem;
+  --peso-titulo: 400;
+  --peso-subtitulo: 700;
+  --peso-texto: 400;
+  --cor-primaria: #ff80ab;
+  --cor-secundaria: #90caf9;
+  --cor-destaque1: #c4e538;
+  --cor-destaque2: #d7a5ff;
+  --cor-fundo: #f5f5f5;
+  --cor-realce: #ff7043;
+  --cor-realce-forte: #f83c03;
+  --cor-titulo: #333333;
+  --cor-subtitulo: #666666;
+  --cor-texto: #333333;
 }
 
 .dark-mode:root {
-    --cor-fundo: #121212;
-    --cor-titulo: #FFFFFF;
-    --cor-subtitulo: #CCCCCC;
-    --cor-texto: #E0E0E0;
+  --cor-fundo: #121212;
+  --cor-titulo: #ffffff;
+  --cor-subtitulo: #cccccc;
+  --cor-texto: #e0e0e0;
 }
 
-html, body {
-    font-family: var(--fonte-corpo);
-    font-size: var(--tamanho-texto);
-    font-weight: var(--peso-texto);
-    color: var(--cor-texto);
-    background-color: var(--cor-fundo);
-}
-
-h1 {
-    font-family: var(--fonte-titulo);
-    font-size: var(--tamanho-titulo);
-    font-weight: var(--peso-titulo);
-    color: var(--cor-realce);
+html,
+body {
+  font-family: var(--fonte-corpo);
+  font-size: var(--tamanho-texto);
+  font-weight: var(--peso-texto);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
 }
 
 h2 {
-    font-family: var(--fonte-subtitulo);
-    font-size: var(--tamanho-subtitulo);
-    font-weight: var(--peso-subtitulo);
-    color: var(--cor-titulo);
+  font-family: var(--fonte-titulo);
+  font-size: var(--tamanho-titulo);
+  font-weight: var(--peso-titulo);
+  color: var(--cor-realce);
+}
+
+h3 {
+  font-family: var(--fonte-subtitulo);
+  font-size: var(--tamanho-subtitulo);
+  font-weight: var(--peso-subtitulo);
+  color: var(--cor-titulo);
 }
 
 header {
-    border-bottom: var(--cor-realce-forte) solid 1px;
-    background-color: var(--cor-realce);
+  border-bottom: var(--cor-realce-forte) solid 0.1rem;
+  background-color: var(--cor-realce);
 }
 
 section {
-    padding: 30px 10px;
+  padding: 8rem 3rem;
 }
 
 #banner {
-    padding: 0;
+  padding: 0;
 }
 
 .navbar-nav li a {
-    color: white;
-  }
+  color: white;
+}
 
 .nav-link:hover {
-    background-color: #f83c03;
-    color: white;
+  background-color: #f83c03;
+  color: white;
 }
 
 .nav-link:focus {
-    background-color: #f83c03;
-    color: white;
+  background-color: #f83c03;
+  color: white;
 }
 
 .offcanvas {
-    background-color: var(--cor-realce);
+  background-color: var(--cor-realce);
 }
 
 .carousel .carousel-item img {
-    height: calc(100vh - 100px);
-    object-fit: cover;
-} 
+  height: calc(100vh - 10rem);
+  object-fit: cover;
+}
 
 .carousel .carousel-item h5 {
-    font: var(--fonte-subtitulo);
-    font-weight: var(--peso-subtitulo);
-    font-size: var(--tamanho-subtitulo);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-} 
-
-.card {
-    background-color: var(--cor-fundo);
-    border: none;
+  font: var(--fonte-subtitulo);
+  font-weight: var(--peso-subtitulo);
+  font-size: var(--tamanho-subtitulo);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.card .card-body {
-    /* max-height: 220px; */
+.produtos .card {
+  background-color: var(--cor-fundo);
+  border: none;
 }
 
-.card img {
-    height: 291px;
-    width: 260;
+.produtos .card .card-body {
+  height: 20rem;
 }
 
-.card .card-footer {
-    font-size: 14px;
-    background-color: var(--cor-fundo);
-    border-top: var(--cor-subtitulo) solid 1px;
+.produtos .card img {
+  height: 35rem;
 }
 
-.card .card-footer a {
-    background-color: var(--cor-primaria);
-    margin-bottom: 10px;
-    color: var(--cor-texto);
+.produtos .card .card-footer {
+  font-size: 1.4rem;
+  background-color: var(--cor-fundo);
+  border-top: var(--cor-subtitulo) solid 0.1rem;
+}
+
+.produtos .card .card-footer a,
+.nossoTime a {
+  background-color: var(--cor-primaria);
+  margin-bottom: 1rem;
+  color: var(--cor-titulo);
+  font-size: var(--tamanho-texto);
+}
+
+.quemSomos {
+  background-color: var(--cor-destaque1);
+}
+
+.quemSomos,
+.quemSomos h3 {
+  color: #333333;
+}
+
+.quemSomos .titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quemSomos figcaption img {
+  height: 20rem;
+  margin: 2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.nossoTime .card {
+  border: none;
+  background-color: var(--cor-fundo);
+}
+
+.nossoTime .card-title {
+  font-size: var(--tamanho-subtitulo);
+}
+
+.nossoTime .card-text {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.nossoTime img {
+  border-radius: 50%;
+}
+
+footer {
+  background-color: var(--cor-destaque2);
+  color: #333333;
+  font-size: 1.4rem;
+}
+
+.bi {
+  margin: auto 1.5rem;
+  font-size: 2.5rem;
+  color: #333333;
 }

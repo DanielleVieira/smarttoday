@@ -13,6 +13,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/toggle-button.css" />
@@ -33,7 +37,7 @@
     <header class="fixed-top">
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">Smart Today</a>
+          <a class="navbar-brand text-white fs-2" href="#">Smart Today</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -50,7 +54,10 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+              <h5
+                class="offcanvas-title text-white fs-1"
+                id="offcanvasNavbarLabel"
+              >
                 Smart Today
               </h5>
               <button
@@ -67,7 +74,7 @@
               </label>
               <ul class="navbar-nav text-white">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Início</a>
+                  <a class="nav-link" href="#banner">Início</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#produtos">Nossos Produtos</a>
@@ -191,8 +198,8 @@
       </section>
 
       <section class="produtos container text-center" id="produtos">
-        <h1>Produtos em Destaque</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <h2>Produtos em Destaque</h2>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
           <div class="col">
             <div class="card">
               <img
@@ -253,7 +260,7 @@
               <div class="card-body">
                 <h5 class="card-title">Google Pixel 7 Pro</h5>
                 <p class="card-text">R$ 6.499</p>
-                <p class="card-text">Capture os grandes momentos.</p>
+                <p class="card-text">Capture os momentos inesquecíveis.</p>
               </div>
               <div class="card-footer">
                 <a href="#" class="btn">Comprar</a>
@@ -337,10 +344,10 @@
                 <a href="#" class="btn">Comprar</a>
                 <p class="text-muted">
                   <small
-                    >O Oppo Find X3 Pro é um smartphone inovador que
-                    combina design sofisticado, desempenho de alto nível e
-                    recursos avançados. Com sua tela OLED de 120Hz, câmera
-                    versátil e carregamento rápido, ele oferece uma experiência
+                    >O Oppo Find X3 Pro é um smartphone inovador que combina
+                    design sofisticado, desempenho de alto nível e recursos
+                    avançados. Com sua tela OLED de 120Hz, câmera versátil e
+                    carregamento rápido, ele oferece uma experiência
                     excepcional.</small
                   >
                 </p>
@@ -350,17 +357,153 @@
         </div>
       </section>
 
-      <section class="quemSomos" id="quemSomos">
-        <h1>Quem Somos</h1>
+      <section class="quemSomos container-fluid" id="quemSomos">
+        <article class="row row-cols-lg-2 g-2">
+          <div class="titulo text-center col">
+            <h2>SmartToday</h2>
+            <figcaption>
+              <img
+                src="assets/empresa/empresa.jpg"
+                alt="Imagem de entrada da empresa"
+              />
+            </figcaption>
+            <h3>Conectando você ao futuro, um smartphone de cada vez</h3>
+          </div>
+          <div class="sobre col">
+            <p>
+              Na SmartToday, somos apaixonados por tecnologia e estamos
+              comprometidos em oferecer smartphones de qualidade excepcional.
+              Nossa missão é proporcionar uma experiência digital incomparável,
+              combinando inovação, design sofisticado e desempenho superior.
+            </p>
+            <p>
+              Com uma equipe especializada e antenada nas últimas tendências,
+              nos esforçamos para superar as expectativas dos nossos clientes.
+              Valorizamos a simplicidade, a funcionalidade e a estética em cada
+              dispositivo que vendemos. Estamos aqui para ajudá-lo(a) a
+              encontrar o smartphone perfeito que atenda às suas necessidades e
+              eleve sua experiência tecnológica a um novo patamar."
+            </p>
+            <p>Junte-se a nós e descubra o poder da tecnologia em suas mãos!</p>
+          </div>
+        </article>
       </section>
 
-      <section class="nossoTime" id="nossoTime">
-        <h1>Nosso Time</h1>
+      <section class="nossoTime text-center container" id="nossoTime">
+        <h2>Nosso Time</h2>
+        <article class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/empresa/joao.jpg"
+                class="card-img-top"
+                alt="Foto do João Silva"
+              />
+              <div class="card-body">
+                <h5 class="card-title">João Silva</h5>
+                <h5 class="card-title">Especialista em Tecnologia</h5>
+                <p class="card-text">
+                  João é um entusiasta da tecnologia com vasta experiência em
+                  dispositivos móveis. Sua paixão por inovação e conhecimento
+                  aprofundado o torna um especialista em identificar as últimas
+                  tendências e recomendar os smartphones mais avançados. Com sua
+                  abordagem orientada ao cliente, João está comprometido em
+                  fornecer soluções personalizadas que atendam às necessidades
+                  únicas de cada cliente.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/empresa/maria.jpg"
+                class="card-img-top"
+                alt="Foto de Maria Santos"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Maria Santos</h5>
+                <h5 class="card-title">Consultora de Vendas</h5>
+                <p class="card-text">
+                  Maria é uma consultora de vendas dedicada e experiente, com um
+                  profundo conhecimento em smartphones. Sua abordagem atenciosa
+                  e amigável ajuda os clientes a encontrar o dispositivo
+                  perfeito para suas necessidades, levando em consideração
+                  recursos, orçamento e preferências individuais. Maria se
+                  destaca por sua capacidade de entender as necessidades do
+                  cliente e oferecer soluções que superem suas expectativas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/empresa/pedro.jpg"
+                class="card-img-top"
+                alt="Foto de Pedro de Oliveira"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pedro Oliveira</h5>
+                <h5 class="card-title">Especialista em Suporte Técnico</h5>
+                <p class="card-text">
+                  Pedro é um especialista em suporte técnico com ampla
+                  experiência em smartphones e dispositivos móveis. Sua
+                  habilidade em solucionar problemas e sua paciência inigualável
+                  garantem que cada cliente receba o suporte necessário, desde a
+                  configuração inicial até o pós-venda. Com uma abordagem calma
+                  e profissional, Pedro está sempre pronto para ajudar os
+                  clientes a aproveitar ao máximo seus smartphones, oferecendo
+                  orientações claras e precisas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
-    <footer class="text-center">
-      <p>Desenvolvido por Danielle de Lima Vieira</p>
-      <p>Site fictício, criado apenas para estudo</p>
+    <footer>
+      <div
+        class="container-fluid row row-cols-1 row-cols-lg-2 text-center py-3"
+      >
+        <article class="contatos col py-3">
+          <p>
+            <strong>SmartToday</strong> - Rua das Tecnologias, 123 Bairro
+            Inovação Cidade Moderna Estado Virtual CEP: 98765-432 País
+            Tecnológico
+          </p>
+          <p>Fale Conosco: +1 (555) 123-4567</p>
+          <p>Acesse nossas redes:</p>
+          <p>
+            <a
+              href="https://twitter.com/?lang=pt-br"
+              target="_blank"
+              aria-label="Twitter da SmarToday"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              aria-label="Instagram da SmarToday"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              aria-label="Youtube da SmarToday"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </p>
+        </article>
+        <article class="col">
+          <p><strong>Desenvolvido por Danielle de Lima Vieira</strong></p>
+          <p>Site fictício, criado apenas para estudo</p>
+          <p>
+            As imagens dos smartphones pertencem a seus fabricantes e as demais
+            imagens estão disponíveis gratuitamente no site Unsplash.
+          </p>
+        </article>
+      </div>
     </footer>
 
     <!-- Scripts -->
