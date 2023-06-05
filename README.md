@@ -1,2 +1,7 @@
-# projeto-nubank-2
-Front end simples, single page, com as seções: carrocel de produtos, lista de produtos, quem somos e nosso time. Utilizando apenas html, css, javascript e bootstrap
+# SmartToday
+
+Uma single page responsiva de uma loja fictícia de vendas de smartphones. 
+Desenvolvida utilizando html, css e boostrap. 
+Apresenta uma barra de navegação carrocel com destaques, lista de produtos e seções quem somos e nosso time.
+
+![SmartToday](./assets/smarttoday.png)
